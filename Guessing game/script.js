@@ -44,12 +44,12 @@ btn.addEventListener('click', function () {
   console.log(maxMargin());
 
   if (!guess) {
-    displayMessage('Doesnt count');
+    displayMessage("Does'nt count ❌");
   } else if (guess === number) {
     teleprompter.textContent = number;
-    colors('#15803d');
+    colors('#52b13c');
     scoreBoardWidth('5em');
-    displayMessage('You Got The Right Number!!!');
+    displayMessage('You Got The Right Number!!! 🙌');
     /* Checking if the current score is greater than the previous score. If it is, it sets the previous
    score to the current score. */
     if (score > basedScore) {
@@ -62,7 +62,7 @@ btn.addEventListener('click', function () {
       scoreBoard.textContent = score;
       displayMessage(guess < number ? 'Its Too Low!!' : 'Its Too High!');
       teleprompter.textContent = '?';
-      colors('#222222');
+      colors('#');
     } else {
       displayMessage('you have lost');
       colors('#a83946');
@@ -72,12 +72,12 @@ btn.addEventListener('click', function () {
 
   again.addEventListener('click', () => {
     displayMessage('Start guessing..');
-    colors('#222222');
+    colors('#cccc');
     teleprompter.textContent = '?';
     score = 20;
     scoreBoard.textContent = score;
     number = Math.floor(Math.random() * maxMargin());
     document.querySelector('.guess').value = '';
-    scoreBoardWidth('15rem');
+    scoreBoardWidth('18rem');
   });
 });
