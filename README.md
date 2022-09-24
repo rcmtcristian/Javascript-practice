@@ -17,7 +17,7 @@ Once the solutions are added:
 
 | Index | Problem and Solution | 
 | :----:| :-------------------:|
-| 1 | [Guessing game](./Guessing-game/Guessing-Game.md) |
+| 1 | [Guessing game](https://github.com/rcmtcristian/Javascript-practice/blob/master/Guessing%20game/Guessing%20Game.md) |
 
 
 
